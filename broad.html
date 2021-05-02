@@ -1,0 +1,17 @@
+
+<html>
+<head>
+<title> Hello World</title>
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+var socket=io();
+socket.on('broadcast',function(data)
+{
+document.write(data.description);
+});
+</script>
+<body>
+helllo
+</body>
+</html>
